@@ -1,26 +1,34 @@
+body{
+    background-color: #a6abad;
+    
+}
+
+section{
+    display: block;
+}
 .main-content
 {
     display: grid;
    min-height: 1000px;
-    grid-template-columns: 300px 700px;
+    grid-template-columns: 300px 700px; 
     width:90%;
+    margin:20px auto;
 }
 .left-section
 {
-     background-color:grey
+    grid-column:span1;
+    background-color:grey
+    
 }
 .right-section
 {
-    background-color:aqua;
+    grid-column: span 1 / span 2;
+    background-color: #f7f7f7;;
 }
 .left-content
 {
     padding: 1rem;
-    /* margin:auto;
-    place-self: center;
-    border: 5px white solid ;
-    border-radius:30%;
-    width:60%; */
+   
 }
 .profile-image
 {
